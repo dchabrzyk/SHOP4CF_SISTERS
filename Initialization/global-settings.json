@@ -1,0 +1,6100 @@
+﻿[
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "resources.list.filters",
+    "profile": "All",
+    "value": "\"\""
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.directiveresourcetype",
+    "profile": "Default",
+    "value": 5
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.finiteresourcetypes",
+    "profile": "Default",
+    "value": [
+      7,
+      0,
+      1
+    ]
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.name",
+    "profile": "Default",
+    "value": "MeMOM"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.tenant.type",
+    "profile": "",
+    "value": 0
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.gantt.settings",
+    "profile": "equipment",
+    "value": {
+      "chart": {
+        "show": true,
+        "lineWidth": 1,
+        "headerWidth": 80,
+        "negativeColor": "rgba(255,0,0,0.49)",
+        "positiveColor": "rgb(139,195,74)",
+        "fixedScaleToValue": 3,
+        "fixedScaleFromValue": 0,
+        "density": 3,
+        "includeResourceGroups": false,
+        "negativeBoundaryValue": 0,
+        "resourceScaleSettings": [],
+        "resourceTypeScaleSettings": [
+          {
+            "type": 5,
+            "fixedScaleToValue": 1,
+            "fixedScaleFromValue": 0,
+            "density": 1
+          },
+          {
+            "type": 7,
+            "fixedScaleToValue": 20,
+            "fixedScaleFromValue": 0,
+            "density": 4
+          },
+          {
+            "type": 0,
+            "fixedScaleFromValue": 0,
+            "fixedScaleToValue": 1,
+            "density": 1
+          }
+        ]
+      },
+      "filter": "Type = 5 OR Type = 6",
+      "activity": {
+        "calendarActivityHeight": 4,
+        "calendarActivityFillColor": {
+          "hover": "rgba(0, 0, 0, 1)",
+          "default": "rgba(0, 0, 0, 1)",
+          "pressed": "rgba(0, 0, 0, 1)",
+          "selected": "rgba(0, 0, 0, 1)",
+          "highlight": "rgba(0, 0, 0, 1)"
+        },
+        "calendarActivityTextColor": {
+          "hover": "rgba(0, 0, 0, 1)",
+          "default": "rgba(0, 0, 0, 1)",
+          "pressed": "rgba(0, 0, 0, 1)",
+          "selected": "rgba(0, 0, 0, 1)",
+          "highlight": "rgba(0, 0, 0, 1)"
+        },
+        "executionActivityFillColor": {
+          "hover": "rgba(74, 65, 165, 0.4)",
+          "default": "rgba(74, 65, 165, 0.3)",
+          "pressed": "rgba(74, 65, 165, 0.5)",
+          "selected": "rgba(181, 169, 232, 0.65)",
+          "highlight": "rgba(181, 169, 232, 0.65)"
+        },
+        "executionActivityTextColor": {
+          "hover": "rgba(0, 0, 0, 1)",
+          "default": "rgba(0, 0, 0, 1)",
+          "pressed": "rgba(81, 45, 168, 1)",
+          "selected": "rgba(81, 45, 168, 1)",
+          "highlight": "rgba(81, 45, 168, 1)"
+        },
+        "schedulingActivityFillColor": {
+          "hover": "rgba(205, 199, 229, 0.8)",
+          "default": "rgba(205, 199, 229, 0.5)",
+          "pressed": "(181, 169, 232, 0.85)",
+          "selected": "rgba(181, 169, 232, 0.65)",
+          "highlight": "rgba(181, 169, 232, 0.65)"
+        },
+        "schedulingActivityTextColor": {
+          "hover": "rgba(0, 0, 0, 1)",
+          "default": "rgba(0, 0, 0, 1)",
+          "pressed": "rgba(81, 45, 168, 1)",
+          "selected": "rgba(81, 45, 168, 1)",
+          "highlight": "rgba(81, 45, 168, 1)"
+        },
+        "interruptedActivityFillColor": {
+          "hover": "rgba(255, 160, 0, 0.7)",
+          "default": "rgba(255, 160, 0, 0.5)",
+          "pressed": "rgba(255, 160, 0, 1)",
+          "selected": "rgba(255, 160, 0, 1)",
+          "highlight": "rgba(255, 160, 0, 1)"
+        },
+        "interruptedActivityTextColor": {
+          "hover": "rgba(0, 0, 0, 1)",
+          "default": "rgba(0, 0, 0, 1)",
+          "pressed": "rgba(0, 0, 0, 1)",
+          "selected": "rgba(0, 0, 0, 1)",
+          "highlight": "rgba(0, 0, 0, 1)"
+        }
+      },
+      "layers": [
+        {
+          "id": "4",
+          "description": "Calendar layer",
+          "visible": true,
+          "opacity": 1.0
+        }
+      ],
+      "startTime": 0,
+      "timelineUnit": 2,
+      "timelineUnitWidth": 20
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.status.settings",
+    "value": {
+      "backgroundColors": [
+        {
+          "status": 0,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 10,
+          "color": "#DEDAF2"
+        },
+        {
+          "status": 100,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 200,
+          "color": "#DEDAF2"
+        },
+        {
+          "status": 300,
+          "color": "#BCB5DF"
+        },
+        {
+          "status": 400,
+          "color": "#7B61FF"
+        },
+        {
+          "status": 500,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 600,
+          "color": "#FF0000"
+        },
+        {
+          "status": 700,
+          "color": "#37C934"
+        },
+        {
+          "status": 900,
+          "color": "#A8E8FF"
+        }
+      ],
+      "textColors": [
+        {
+          "status": 0,
+          "color": "#434343"
+        },
+        {
+          "status": 10,
+          "color": "#434343"
+        },
+        {
+          "status": 100,
+          "color": "#434343"
+        },
+        {
+          "status": 200,
+          "color": "#434343"
+        },
+        {
+          "status": 300,
+          "color": "#434343"
+        },
+        {
+          "status": 400,
+          "color": "#666666"
+        },
+        {
+          "status": 500,
+          "color": "#434343"
+        },
+        {
+          "status": 600,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 700,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 900,
+          "color": "#140853"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.status.step",
+    "value": {
+      "backgroundColors": [
+        {
+          "status": 0,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 10,
+          "color": "#DEDAF2"
+        },
+        {
+          "status": 100,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 200,
+          "color": "#DEDAF2"
+        },
+        {
+          "status": 300,
+          "color": "#BCB5DF"
+        },
+        {
+          "status": 400,
+          "color": "#7B61FF"
+        },
+        {
+          "status": 500,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 600,
+          "color": "#FF0000"
+        },
+        {
+          "status": 700,
+          "color": "#37C934"
+        },
+        {
+          "status": 900,
+          "color": "#A8E8FF"
+        }
+      ],
+      "textColors": [
+        {
+          "status": 0,
+          "color": "#434343"
+        },
+        {
+          "status": 10,
+          "color": "#434343"
+        },
+        {
+          "status": 100,
+          "color": "#434343"
+        },
+        {
+          "status": 200,
+          "color": "#434343"
+        },
+        {
+          "status": 300,
+          "color": "#434343"
+        },
+        {
+          "status": 400,
+          "color": "#666666"
+        },
+        {
+          "status": 500,
+          "color": "#434343"
+        },
+        {
+          "status": 600,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 700,
+          "color": "#FFFFFF"
+        },
+        {
+          "status": 900,
+          "color": "#140853"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "alerting.email.template",
+    "profile": "TenantCreated",
+    "value": "Tenant <strong>{{ TenantName }}</strong> has been created!<br/><br/>Kind regards<br/>MeMOM team"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "alerting.email.template",
+    "profile": "ReportGenerated",
+    "value": "Report <strong>{{ Report.Settings.Name }}</strong> has been generated! Please check attachment.<br/><br/>Kind regards<br/>MeMOM team"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "report.ordersGroupedByCustomersReport",
+    "profile": "default",
+    "value": {
+      "identifier": "ordersGroupedByCustomersReport",
+      "name": "Customer orders",
+      "version": "1.0",
+      "parameters": {
+        "bufferDelay": {
+          "type": 5,
+          "value": -31536000
+        },
+        "reportName": {
+          "type": 3,
+          "value": "Customer orders"
+        },
+        "onlyRootTasks": {
+          "type": 4,
+          "value": false
+        },
+        "tenantId": {
+          "type": 3,
+          "readOnly": true,
+          "value": null
+        },
+        "scenarioId": {
+          "type": 3,
+          "readOnly": true,
+          "value": null
+        },
+        "customerId": {
+          "type": 3,
+          "readOnly": true,
+          "value": null
+        }
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "report.OeeReport",
+    "profile": "default",
+    "value": {
+      "identifier": "OeeReport",
+      "name": "Overall Equipment Effectiveness",
+      "version": "1.0",
+      "reportName": "OEE",
+      "parameters": {
+        "period": {
+          "type": 0,
+          "readOnly": false,
+          "value": {
+            "start": "2022-01-01T00:00:00Z",
+            "end": "2023-02-01T00:00:00Z"
+          }
+        },
+        "aggregationType": {
+          "type": 1,
+          "availableValues": [
+            "Day",
+            "Week",
+            "Month"
+          ],
+          "value": "Day"
+        },
+        "equipments": {
+          "type": 2,
+          "subtype": 0,
+          "value": [
+            "CORMAK S-280R #1",
+            "CORMAK S-280R #2"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "report.OleReport",
+    "profile": "default",
+    "value": {
+      "identifier": "OleReport",
+      "name": "Overall Labor Effectiveness",
+      "version": "1.0",
+      "reportName": "OLE",
+      "parameters": {
+        "period": {
+          "type": 0,
+          "readOnly": false,
+          "value": {
+            "start": "2023-01-01T00:00:00Z",
+            "end": "2023-02-01T00:00:00Z"
+          }
+        },
+        "aggregationType": {
+          "type": 1,
+          "availableValues": [
+            "Day",
+            "Week",
+            "Month"
+          ],
+          "value": "Day"
+        },
+        "personnel": {
+          "type": 2,
+          "subtype": 0,
+          "value": [
+            "d.chabrzyk",
+            "b.skorupski",
+            "l.glaz"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "report.WorkSatisfactionReport",
+    "profile": "default",
+    "value": {
+      "identifier": "WorkSatisfactionReport",
+      "name": "Work Satisfaction",
+      "version": "1.0",
+      "reportName": "Work Satisfaction",
+      "parameters": {
+        "period": {
+          "type": 0,
+          "readOnly": false,
+          "value": {
+            "start": "2022-09-01T00:00:00Z",
+            "end": "2022-11-01T00:00:00Z"
+          }
+        },
+        "resourceTypes": {
+          "type": 1003,
+          "value": [
+            "Person",
+            "PersonGroup"
+          ]
+        },
+        "taskTypes": {
+          "type": 1003,
+          "value": [
+            "WELD",
+            "PAINT",
+            "HEAVY"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.settings",
+    "profile": "",
+    "value": {
+      "taskFilter": "",
+      "defaultInterruptionPredictedDuration": "1:00:00",
+      "homeScreen": "DefaultHomeScreen",
+      "workSatisfactionRatingTagsGroup": "Satisfaction",
+      "showOnlyAssignedTasksWhenLoggedIn": true,
+      "showSatisfaction": false,
+      "showConstraints": false,
+      "globalActions": [
+        "interrupted",
+        "interruptionEnded",
+        "clockIn",
+        "clockOut",
+        "personnelDispatching",
+        [
+          "myInfoDashboard",
+          {
+            "dashboardId": "dffd0c1a-547a-47f9-8f42-90ea2ce46696"
+          }
+        ]
+      ],
+      "contextActions": [
+        "start",
+        "quantity",
+        "finished",
+        "qualityMeasurement",
+        "reportScrapByAttributes",
+        [
+          "productDashboard",
+          {
+            "dashboardId": "e23fbd1c-c6bd-4186-aefa-7c43adfdffc1"
+          }
+        ]
+      ],
+      "languages": [
+        "pl",
+        "uk",
+        "en"
+      ],
+      "actionButtonIconSize": "2.4rem",
+      "peripheralDevices": {
+        "allowInputMultiClassification": false,
+        "inputClassifiers": [
+          {
+            "tag": "id",
+            "expression": "^(2500fd7b6b|2500fd7b6e|2500fd7b89|2500fd7b8c)$",
+            "syntax": 0
+          },
+          {
+            "tag": "id",
+            "expression": "^id:[0-9A-z#\\-]*",
+            "syntax": 0
+          },
+          {
+            "tag": "data",
+            "expression": "^.*$",
+            "syntax": 0
+          }
+        ]
+      },
+      "terminalEquipments": [
+        {
+          "businessId": "Manual Cutting #1",
+          "label": null
+        },
+        {
+          "businessId": "Manual Cutting #2",
+          "label": null
+        },
+        {
+          "businessId": "QC Workplace 1",
+          "label": "Quality Control"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.settings",
+    "profile": "AllResources",
+    "value": {
+      "taskFilter": "",
+      "defaultInterruptionPredictedDuration": "1:00:00",
+      "homeScreen": "DefaultHomeScreen",
+      "workSatisfactionRatingTagsGroup": "Satisfaction",
+      "showOnlyAssignedTasksWhenLoggedIn": true,
+      "showSatisfaction": false,
+      "showConstraints": false,
+      "globalActions": [
+        "interrupted",
+        "interruptionEnded",
+        "clockIn",
+        "clockOut",
+        "personnelDispatching",
+        [
+          "myInfoDashboard",
+          {
+            "dashboardId": "dffd0c1a-547a-47f9-8f42-90ea2ce46696"
+          }
+        ]
+      ],
+      "contextActions": [
+        "start",
+        "quantity",
+        "finished",
+        "qualityMeasurement",
+        "reportScrapByAttributes",
+        [
+          "productDashboard",
+          {
+            "dashboardId": "e23fbd1c-c6bd-4186-aefa-7c43adfdffc1"
+          }
+        ]
+      ],
+      "languages": [
+        "pl",
+        "uk",
+        "en"
+      ],
+      "actionButtonIconSize": "2.4rem",
+      "peripheralDevices": {
+        "allowInputMultiClassification": false,
+        "inputClassifiers": [
+          {
+            "tag": "id",
+            "expression": "^(2500fd7b6b|2500fd7b6e|2500fd7b89|2500fd7b8c)$",
+            "syntax": 0
+          },
+          {
+            "tag": "id",
+            "expression": "^id:[0-9A-z#\\-]*",
+            "syntax": 0
+          },
+          {
+            "tag": "data",
+            "expression": "^.*$",
+            "syntax": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.settings",
+    "profile": "AllActions",
+    "value": {
+      "taskFilter": "",
+      "defaultInterruptionPredictedDuration": "1:00:00",
+      "homeScreen": "DefaultHomeScreen",
+      "workSatisfactionRatingTagsGroup": "Satisfaction",
+      "showOnlyAssignedTasksWhenLoggedIn": true,
+      "showSatisfaction": false,
+      "showConstraints": false,
+      "globalActions": [
+        "interrupted",
+        [
+          "myInfoDashboard",
+          {
+            "dashboardId": "dffd0c1a-547a-47f9-8f42-90ea2ce46696"
+          }
+        ],
+        "clockIn",
+        "clockOut",
+        "personnelDispatching"
+      ],
+      "contextActions": [
+        "start",
+        "finished",
+        [
+          "productDashboard",
+          {
+            "dashboardId": "e23fbd1c-c6bd-4186-aefa-7c43adfdffc1"
+          }
+        ],
+        "quantity",
+        "qualityMeasurement"
+      ],
+      "languages": [
+        "pl",
+        "uk",
+        "en"
+      ],
+      "actionButtonIconSize": "2.4rem",
+      "peripheralDevices": {
+        "allowInputMultiClassification": false,
+        "inputClassifiers": [
+          {
+            "tag": "id",
+            "expression": "^(2500fd7b6b|2500fd7b6e|2500fd7b89|2500fd7b8c)$",
+            "syntax": 0
+          },
+          {
+            "tag": "id",
+            "expression": "^id:[0-9A-z#\\-]*",
+            "syntax": 0
+          },
+          {
+            "tag": "data",
+            "expression": "^.*$",
+            "syntax": 0
+          }
+        ]
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.client.settings",
+    "profile": "",
+    "value": {
+      "defaultStartComponentName": "Product Card",
+      "defaultStartComponentRouteProps": {}
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "shop4cf.fiware.removeAlertAfterConsumed",
+    "profile": "",
+    "value": true
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.dashboard.settings",
+    "profile": "",
+    "value": {
+      "dashboards": [
+        {
+          "url": "https://cdems.kb.eu-west-1.aws.found.io:9243/app/dashboards#/view/301a0f30-1883-11ed-94fc-b7b451f18f7e?embed=true&_g=(filters%3A!()%2Cquery%3A(language%3Akuery%2Cquery%3A'')%2CrefreshInterval%3A(pause%3A!f%2Cvalue%3A10000)%2Ctime%3A(from%3Anow%2Fd%2Cto%3Anow%2Fd))&show-time-filter=true",
+          "name": "Quality Check Ratio"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "alerting.email.template",
+    "profile": "KibanaAlert",
+    "value": "Kibana alert <strong>{{ Rule.Name }}</strong> with value <strong>{{ Context.Ratio }}</strong> has been triggered with state <strong>{{ Alert.ActionGroupName }}</strong>!<br/><br/>Kind regards<br/>MeMOM team"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.menu",
+    "profile": "",
+    "value": {
+      "menuRouting": [
+        {
+          "path": "masterdata/product-overview",
+          "name": "Product Card",
+          "component": "ProductOverview",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Product Card",
+                "path": [
+                  "operations",
+                  "engineering"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/product-templates",
+          "name": "ProductTemplates",
+          "component": "ProductTemplates",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Product Templates",
+                "path": [
+                  "operations",
+                  "engineering"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/technology-wizard",
+          "name": "TechnologyWizard",
+          "component": "TechnologyWizard",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Process Drafts",
+                "path": [
+                  "operations",
+                  "engineering"
+                ],
+                "order": 2
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "operations/customer-orders",
+          "name": "Orders",
+          "component": "OrdersView",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Orders",
+                "path": [
+                  "operations",
+                  "sales-purchase"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "scheduling/planning",
+          "name": "Planning",
+          "component": "Planning",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "Rough Cut Capacity Planning",
+                "path": [
+                  "operations",
+                  "planning"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "scheduling/resources-gantt",
+          "name": "ResourcesGantt",
+          "component": "ResourcesGanttView",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Resources Gantt",
+                "path": [
+                  "operations",
+                  "planning"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/tasks",
+          "name": "Tasks",
+          "component": "Tasks",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Production Tasks",
+                "path": [
+                  "operations",
+                  "planning"
+                ],
+                "order": 2
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "scheduling/tasks-gantt",
+          "name": "TasksGantt",
+          "component": "TaskGanttView",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Tasks Gantt",
+                "path": [
+                  "operations",
+                  "planning"
+                ],
+                "order": 3
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "operations/logistic",
+          "name": "MaterialMovement",
+          "component": "MaterialMovement",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Material movement",
+                "path": [
+                  "operations",
+                  "logistic"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "execution/inconsistency-detection",
+          "name": "Inconsistency Detection",
+          "component": "InconsistencyDetection",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "InconsistencyDetection",
+                "path": [
+                  "operations",
+                  "execution"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/organizations",
+          "name": "Organizations",
+          "component": "Organizations",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Organizations",
+                "path": [
+                  "basicData",
+                  "others"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/contacts",
+          "name": "Contacts",
+          "component": "Contacts",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Contacts",
+                "path": [
+                  "basicData",
+                  "others"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "administration/tags",
+          "name": "Tags",
+          "component": "Tags",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "Tags",
+                "path": [
+                  "basicData",
+                  "others"
+                ],
+                "order": 2
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/equipment",
+          "name": "Equipment",
+          "component": "Equipment",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Equipment",
+                "path": [
+                  "basicData",
+                  "resources"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/materials",
+          "name": "Materials",
+          "component": "Material",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Materials",
+                "path": [
+                  "basicData",
+                  "resources"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/personnel",
+          "name": "Personnel",
+          "component": "Personnel",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "Personnel",
+                "path": [
+                  "basicData",
+                  "resources"
+                ],
+                "order": 2
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/assets",
+          "name": "Assets",
+          "component": "Assets",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Assets",
+                "path": [
+                  "basicData",
+                  "resources"
+                ],
+                "order": 3
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/location",
+          "name": "Location",
+          "component": "Location",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Locations",
+                "path": [
+                  "basicData",
+                  "resources"
+                ],
+                "order": 4
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/services",
+          "name": "Services",
+          "component": "Services",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "Services",
+                "path": [
+                  "basicData",
+                  "resources"
+                ],
+                "order": 5
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/agreements",
+          "name": "Agreements",
+          "component": "Agreements",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Agreements",
+                "path": [
+                  "basicData",
+                  "resources"
+                ],
+                "order": 6
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "resources/calendars",
+          "name": "Calendars",
+          "component": "Calendars",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Calendars",
+                "path": [
+                  "basicData",
+                  "time"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "scheduling/time-capacity-rules",
+          "name": "TimeCapacityRules",
+          "component": "TimeCapacityRules",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Calendar Rules",
+                "path": [
+                  "basicData",
+                  "time"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "system/reports/oee",
+          "name": "OEE Report",
+          "component": "OEEReport",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "OEE Report",
+                "path": [
+                  "reports",
+                  "reports"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "read:report"
+          }
+        },
+        {
+          "path": "system/reports/ole",
+          "name": "OLE Report",
+          "component": "OLEReport",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "OLE Report",
+                "path": [
+                  "reports",
+                  "reports"
+                ],
+                "order": 2
+              }
+            ],
+            "tenant_roles": "read:report"
+          }
+        },
+        {
+          "path": "system/reports/electricityConsumptionPerEquipment",
+          "name": "Electricity Consumption Per Equipment",
+          "component": "ElectricityConsumptionPerEquipmentReport",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "Electricity Consumption Per Equipment",
+                "path": [
+                  "reports",
+                  "reports"
+                ],
+                "order": 3
+              }
+            ],
+            "tenant_roles": "read:report"
+          }
+        },
+        {
+          "path": "system/reports/dashboards/product_passport",
+          "name": "Product Passport",
+          "component": "Dashboards/Dashboard",
+          "beforeEnter": null,
+          "meta": {
+            "dashboardId": "e23fbd1c-c6bd-4186-aefa-7c43adfdffc1",
+            "menu": [
+              {
+                "name": "Product Passport",
+                "path": [
+                  "reports",
+                  "dashboards"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "read:dashboard"
+          }
+        },
+        {
+          "path": "system/reports/dashboards/resource_tracker",
+          "name": "Resource Tracker",
+          "component": "Dashboards/Dashboard",
+          "beforeEnter": null,
+          "meta": {
+            "dashboardId": "54b04755-f065-4c4d-aa6f-bc739a30f339",
+            "menu": [
+              {
+                "name": "Resource Tracker",
+                "path": [
+                  "reports",
+                  "dashboards"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "read:dashboard"
+          }
+        },
+        {
+          "path": "system/settings",
+          "name": "Settings",
+          "component": "Settings",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "Settings",
+                "path": [
+                  "administration",
+                  "administration"
+                ],
+                "order": 0
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "system/users",
+          "name": "Users",
+          "component": "Users",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [
+              {
+                "name": "Users",
+                "path": [
+                  "administration",
+                  "administration"
+                ],
+                "order": 1
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "masterdata/model-instances",
+          "name": "ModelInstances",
+          "component": "ModelInstances",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Model Instances",
+                "path": [
+                  "administration",
+                  "administration"
+                ],
+                "order": 2
+              }
+            ],
+            "tenant_roles": "User"
+          }
+        },
+        {
+          "path": "system/import",
+          "name": "Import",
+          "component": "Import",
+          "beforeEnter": "scenarioGuard",
+          "meta": {
+            "menu": [
+              {
+                "name": "Import",
+                "path": [
+                  "administration",
+                  "administration"
+                ],
+                "order": 3
+              }
+            ],
+            "tenant_roles": "Admin"
+          }
+        },
+        {
+          "path": "system/tenants",
+          "name": "Tenants",
+          "component": "Tenants",
+          "beforeEnter": null,
+          "meta": {
+            "menu": [],
+            "tenant_roles": "User"
+          }
+        }
+      ],
+      "menuStructure": [
+        {
+          "id": "operations",
+          "name": "Operations",
+          "items": [
+            {
+              "id": "engineering",
+              "name": "Production Preparation",
+              "icon": "mdi-account-hard-hat",
+              "items": []
+            },
+            {
+              "id": "sales-purchase",
+              "name": "Sales & Purchase",
+              "icon": "mdi-cash-fast",
+              "items": []
+            },
+            {
+              "id": "planning",
+              "name": "Planning & Scheduling",
+              "icon": "mdi-chart-timeline",
+              "items": []
+            },
+            {
+              "id": "logistic",
+              "name": "Logistic",
+              "icon": "mdi-truck-fast-outline",
+              "items": []
+            },
+            {
+              "id": "execution",
+              "name": "Execution",
+              "icon": "mdi-cctv",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "basicData",
+          "name": "Basic Data",
+          "items": [
+            {
+              "id": "resources",
+              "name": "Resources",
+              "icon": "mdi-fire",
+              "items": []
+            },
+            {
+              "id": "time",
+              "name": "Time",
+              "icon": "mdi-timer-outline",
+              "items": []
+            },
+            {
+              "id": "others",
+              "name": "Others",
+              "icon": "mdi-account-supervisor-circle",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "reports",
+          "name": "Reports",
+          "items": [
+            {
+              "id": "reports",
+              "name": "Reports",
+              "icon": "mdi-chart-pie",
+              "items": []
+            },
+            {
+              "id": "dashboards",
+              "name": "Dashboards",
+              "icon": "mdi-view-dashboard-outline",
+              "items": []
+            }
+          ]
+        },
+        {
+          "id": "administration",
+          "name": "Administration",
+          "items": [
+            {
+              "id": "administration",
+              "name": "Administration",
+              "icon": "mdi-shield",
+              "items": []
+            },
+            {
+              "id": "authentication",
+              "name": "Authentication",
+              "icon": "mdi-lock",
+              "items": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.client.i18n.labels.public",
+    "profile": "en",
+    "value": {
+      "languages": {
+        "en": "English",
+        "pl": "Polski"
+      },
+      "createNewTenant": "create new tenant"
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.client.i18n.labels.public",
+    "profile": "pl",
+    "value": {
+      "createNewTenant": "załóż nowego tenanta"
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.client.i18n.labels",
+    "profile": "en",
+    "value": {
+      "languages": {
+        "en": "English",
+        "pl": "Polski"
+      },
+      "view": {
+        "settings": {
+          "title": "Settings"
+        }
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.client.i18n.labels",
+    "profile": "pl",
+    "value": {
+      "view": {
+        "settings": {
+          "title": "Ustawienia"
+        }
+      }
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.i18n.labels.public",
+    "profile": "en",
+    "value": {
+      "selectLanguage": "Select language"
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.i18n.labels.public",
+    "profile": "pl",
+    "value": {
+      "selectLanguage": "Wybierz język"
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.i18n.labels",
+    "profile": "en",
+    "value": {
+      "selectLanguage": "Select language"
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.i18n.labels",
+    "profile": "pl",
+    "value": {
+      "selectLanguage": "Wybierz język"
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.planning.reworkresourcemapping",
+    "profile": "Default",
+    "value": {
+      "book": [
+        {
+          "from": [
+            "Equipment::*",
+            "EquipmentGroup::*",
+            "Asset::*"
+          ],
+          "to": [
+            "QC Workplaces"
+          ]
+        }
+      ],
+      "consume": [
+        {
+          "from": [
+            "Material::*"
+          ],
+          "to": []
+        }
+      ],
+      "produce": []
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "scheduling.general.defaultSettingName",
+    "profile": "Default",
+    "value": "EarliestDate"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "scheduling.general.defaultDragAndDropSettingName",
+    "profile": "Default",
+    "value": "ExactDate"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "scheduling.general.settingNames",
+    "profile": "Default",
+    "value": [
+      "EarliestDate",
+      "TaskPriority",
+      "ResourcePriority"
+    ]
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.terminal.workSatisfaction.ratingTagsGroup",
+    "profile": "Default",
+    "value": "Satisfaction"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.agreements.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.assets.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.contacts.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.costCatalogue.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.equipment.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.locations.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.materials.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.order-lines.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.orders.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.organizations.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.personnel.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.product-templates.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.scenarios.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.schema-instances.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.schemas.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.services.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.settings.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.step-resource-specs.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.tags.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.task-details.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.tasks.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.task-resource-capacities.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.time-capacity-rules.default",
+    "profile": "",
+    "value": "memom"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.agreements",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "ag-Grid-AutoColumn",
+          "width": 330,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "id",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": true,
+          "rowGroupIndex": 0,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "parentId",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 168,
+          "hide": false,
+          "pinned": null,
+          "sort": "asc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "type",
+          "width": 126,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 168,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "isActive",
+          "width": 110,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "agreementType",
+          "width": 168,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "periodStart",
+          "width": 102,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "periodEnd",
+          "width": 95,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "agreedFTE",
+          "width": 142,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "plannedEffort",
+          "width": 159,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "remainingEffort",
+          "width": 174,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "versionNumber",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "versionDateTime",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.assets",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "type",
+          "width": 101,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 289,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 313,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "token",
+          "width": 112,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "color",
+          "width": 111,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "subTypes",
+          "width": 150,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "tags",
+          "width": 103,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.contacts",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "businessId",
+          "width": 160,
+          "hide": false,
+          "pinned": null,
+          "sort": "asc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 186,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "description",
+          "width": 203,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "email",
+          "width": 244,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "organization",
+          "width": 149,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "phone",
+          "width": 161,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.costCatalogue",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "id",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "resourceBusinessId",
+          "width": 289,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "pricePerQuantity",
+          "width": 195,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "measurementUnit",
+          "width": 100,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "orderableUnit",
+          "width": 172,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "currencyCode",
+          "width": 135,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "providerBusinessId",
+          "width": 131,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "quantityPerPrice",
+          "width": 195,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "quantityPerPriceUnit",
+          "width": 226,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "packSize",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "minimumOrderQuantity",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "validFrom",
+          "width": 156,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "validTo",
+          "width": 156,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 148,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.equipment",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "type",
+          "width": 228,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "ag-Grid-AutoColumn",
+          "width": 330,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "id",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": true,
+          "rowGroupIndex": 0,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "parentId",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 212,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 212,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "color",
+          "width": 151,
+          "hide": false,
+          "pinned": null,
+          "sort": "asc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.locations",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "businessId",
+          "width": 160,
+          "hide": false,
+          "pinned": null,
+          "sort": "asc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 135,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "type",
+          "width": 112,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "color",
+          "width": 129,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.materials",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "subTypes",
+          "width": 351,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 284,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 284,
+          "hide": false,
+          "pinned": null,
+          "sort": "asc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "type",
+          "width": 108,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "description",
+          "width": 151,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "measurementUnit",
+          "width": 100,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "trackingType",
+          "width": 165,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "color",
+          "width": 111,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "infiniteCapacity",
+          "width": 183,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "infiniteCapacityOffset",
+          "width": 230,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.order-lines",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "position",
+          "pivot": false,
+          "width": 120,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "status",
+          "pivot": false,
+          "width": 113,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "deliveryDate",
+          "pivot": false,
+          "width": 169,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "itemBusinessId",
+          "pivot": false,
+          "width": 369,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "quantity",
+          "pivot": false,
+          "width": 121,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "itemName",
+          "pivot": false,
+          "width": 379,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "description",
+          "pivot": false,
+          "width": 369,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "quantityUnit",
+          "pivot": false,
+          "width": 148,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": null,
+          "type": "textInputTypeColumn",
+          "colId": "position",
+          "field": "position",
+          "pivot": false,
+          "width": 120,
+          "filter": "agNumberColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [
+              null
+            ],
+            "placeholder": "Position"
+          }
+        },
+        {
+          "sort": null,
+          "colId": "status",
+          "field": "status",
+          "pivot": false,
+          "width": 113,
+          "filter": false,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "headerName": "Status",
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "type": "datepickerTypeColumn",
+          "colId": "deliveryDate",
+          "field": "deliveryDate",
+          "pivot": false,
+          "width": 169,
+          "filter": "agDateColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "placeholder": "Delivery Date"
+          }
+        },
+        {
+          "sort": null,
+          "type": "referencePickerTypeColumn",
+          "colId": "itemBusinessId",
+          "field": "itemBusinessId",
+          "pivot": false,
+          "width": 369,
+          "filter": "agTextColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 3,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "component": {
+              "emits": [
+                "manageModelInstances",
+                "manageTimeCapacityRules",
+                "rowSelected",
+                "resource2resource",
+                "resource2resourceReverse"
+              ],
+              "props": {
+                "referenceValue": null
+              },
+              "__name": "MaterialGrid"
+            },
+            "placeholder": "Item Business Id"
+          }
+        },
+        {
+          "sort": null,
+          "type": "textInputTypeColumn",
+          "colId": "quantity",
+          "field": "quantity",
+          "pivot": false,
+          "width": 121,
+          "filter": "agNumberColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 4,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [
+              null
+            ],
+            "placeholder": "Quantity"
+          }
+        },
+        {
+          "sort": null,
+          "colId": "itemName",
+          "field": "itemName",
+          "pivot": false,
+          "width": 379,
+          "filter": "agTextColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 5,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "hide": true,
+          "sort": null,
+          "type": "textInputTypeColumn",
+          "colId": "description",
+          "field": "description",
+          "pivot": false,
+          "width": 369,
+          "filter": "agTextColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 6,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "placeholder": "Description"
+          }
+        },
+        {
+          "hide": true,
+          "sort": null,
+          "type": "quantityUnitColumn",
+          "colId": "quantityUnit",
+          "field": "quantityUnit",
+          "pivot": false,
+          "width": 148,
+          "filter": "agNumberColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 7,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "values": [
+              {
+                "key": "Unit",
+                "value": 0
+              },
+              {
+                "key": "FTE",
+                "value": 1
+              }
+            ],
+            "multiple": false,
+            "placeholder": "Quantity Unit"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.orders",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "businessId",
+          "pivot": false,
+          "width": 155,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "issueDate",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "releaseStatus",
+          "pivot": false,
+          "width": 162,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "customerName",
+          "pivot": false,
+          "width": 140,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "description",
+          "pivot": false,
+          "width": 398,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "orderType",
+          "pivot": false,
+          "width": 157,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "organizationId",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": "asc",
+          "type": "textInputTypeColumn",
+          "colId": "businessId",
+          "field": "businessId",
+          "pivot": false,
+          "width": 155,
+          "filter": "agTextColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": 0,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [
+              null
+            ],
+            "placeholder": "Business ID"
+          }
+        },
+        {
+          "sort": null,
+          "type": "datepickerTypeColumn",
+          "colId": "issueDate",
+          "field": "issueDate",
+          "pivot": false,
+          "width": 172,
+          "filter": "agDateColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [
+              null
+            ],
+            "placeholder": "Issue Date"
+          }
+        },
+        {
+          "sort": null,
+          "colId": "releaseStatus",
+          "field": "releaseStatus",
+          "pivot": false,
+          "width": 162,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "type": "referencePickerTypeColumn",
+          "colId": "customerName",
+          "field": "customerName",
+          "pivot": false,
+          "width": 140,
+          "filter": "agTextColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 3,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "component": {
+              "emits": [
+                "rowSelected"
+              ],
+              "props": {
+                "referenceValue": null
+              },
+              "__name": "OrganizationGrid"
+            },
+            "placeholder": "Customer"
+          }
+        },
+        {
+          "sort": null,
+          "type": "textInputTypeColumn",
+          "colId": "description",
+          "field": "description",
+          "pivot": false,
+          "width": 398,
+          "filter": "agTextColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 4,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [
+              null
+            ],
+            "placeholder": "Description"
+          }
+        },
+        {
+          "sort": null,
+          "type": "orderTypeColumn",
+          "colId": "orderType",
+          "field": "orderType",
+          "pivot": false,
+          "width": 157,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 5,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [
+              null
+            ],
+            "values": [
+              {
+                "key": "Customer Order",
+                "value": 1
+              },
+              {
+                "key": "Unknown",
+                "value": -1
+              }
+            ],
+            "multiple": false,
+            "placeholder": "Order Type"
+          }
+        },
+        {
+          "hide": true,
+          "sort": null,
+          "colId": "organizationId",
+          "field": "organizationId",
+          "pivot": false,
+          "width": 200,
+          "filter": "agTextColumnFilter",
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 6,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "suppressColumnsToolPanel": true
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.organizations",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "businessId",
+          "pivot": false,
+          "width": 140,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "name",
+          "pivot": false,
+          "width": 140,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "types",
+          "pivot": false,
+          "width": 118,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": "asc",
+          "type": "textInputTypeColumn",
+          "colId": "businessId",
+          "field": "businessId",
+          "pivot": false,
+          "width": 140,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": 0,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "placeholder": "Business ID"
+          }
+        },
+        {
+          "sort": null,
+          "type": "textInputTypeColumn",
+          "colId": "name",
+          "field": "name",
+          "pivot": false,
+          "width": 140,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [
+              null
+            ],
+            "placeholder": "Name"
+          }
+        },
+        {
+          "sort": null,
+          "type": "organizationTypesColumn",
+          "colId": "types",
+          "field": "types",
+          "pivot": false,
+          "width": 118,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "editable": true,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "cellEditor": {},
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "cellEditorParams": {
+            "rules": [],
+            "values": [
+              {
+                "key": "Supplier",
+                "value": 1
+              },
+              {
+                "key": "Customer",
+                "value": 2
+              },
+              {
+                "key": "Subcontractor",
+                "value": 3
+              }
+            ],
+            "multiple": true,
+            "placeholder": "Type"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.personnel",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "ag-Grid-AutoColumn",
+          "width": 330,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "id",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 172,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 172,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "color",
+          "width": 119,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "tags",
+          "width": 103,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "type",
+          "width": 131,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.product-templates",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "ag-Grid-AutoColumn",
+          "width": 50,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "wbs",
+          "width": 79,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": true,
+          "rowGroupIndex": 0,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "id",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "item",
+          "width": 586,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "revisionNumber",
+          "width": 81,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "itemName",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "itemBusinessId",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "templateStatus",
+          "width": 117,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "taskSubType",
+          "width": 208,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 504,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 554,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "templateValidFrom",
+          "width": 176,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "templateValidTo",
+          "width": 177,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "priority",
+          "width": 122,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "tags",
+          "width": 103,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.scenarios",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "status",
+          "pivot": false,
+          "width": 126,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "createdAt",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "name",
+          "pivot": false,
+          "width": 126,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": null,
+          "colId": "status",
+          "field": "status",
+          "pivot": false,
+          "width": 126,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "sortIndex": null,
+          "headerName": "Status",
+          "pivotIndex": null,
+          "initialWidth": 150,
+          "rowGroupIndex": null,
+          "suppressSizeToFit": true
+        },
+        {
+          "sort": null,
+          "colId": "createdAt",
+          "field": "createdAt",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "sortIndex": null,
+          "headerName": "Created",
+          "pivotIndex": null,
+          "initialWidth": 150,
+          "rowGroupIndex": null,
+          "suppressSizeToFit": true
+        },
+        {
+          "sort": null,
+          "colId": "name",
+          "field": "name",
+          "pivot": false,
+          "width": 126,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "headerName": "Name",
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.schema-instances",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "businessId",
+          "pivot": false,
+          "width": 293,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "schema",
+          "pivot": false,
+          "width": 404,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "version",
+          "pivot": false,
+          "width": 118,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "0",
+          "pivot": false,
+          "width": 126,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": "asc",
+          "colId": "businessId",
+          "field": "businessId",
+          "pivot": false,
+          "width": 293,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "schema",
+          "field": "schema",
+          "pivot": false,
+          "width": 404,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "version",
+          "field": "version",
+          "pivot": false,
+          "width": 118,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "0",
+          "pivot": false,
+          "width": 126,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 3,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.schemas",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "schemaName",
+          "pivot": false,
+          "width": 288,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "version",
+          "pivot": false,
+          "width": 118,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": "asc",
+          "colId": "schemaName",
+          "field": "schemaName",
+          "pivot": false,
+          "width": 288,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "version",
+          "field": "version",
+          "pivot": false,
+          "width": 118,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.services",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "businessId",
+          "width": 138,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 138,
+          "hide": false,
+          "pinned": null,
+          "sort": "asc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "color",
+          "width": 105,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.settings",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "ag-Grid-AutoColumn",
+          "pivot": false,
+          "width": 127,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "key",
+          "pivot": false,
+          "width": 298,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "profile",
+          "pivot": false,
+          "width": 164,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "value",
+          "pivot": false,
+          "width": 125,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "context",
+          "pivot": false,
+          "width": 127,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": 0
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "metadata",
+          "pivot": false,
+          "width": 501,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": "asc",
+          "colId": "key",
+          "field": "key",
+          "pivot": false,
+          "width": 298,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "profile",
+          "field": "profile",
+          "pivot": false,
+          "width": 164,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "headerName": "Profile",
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "hide": true,
+          "sort": null,
+          "colId": "value",
+          "field": "value",
+          "pivot": false,
+          "width": 336803,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "rowGroup": false,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null,
+          "suppressSizeToFit": true
+        },
+        {
+          "sort": null,
+          "colId": "context",
+          "field": "context",
+          "pivot": false,
+          "width": 127,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 3,
+          "rowGroup": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": 0
+        },
+        {
+          "sort": null,
+          "colId": "metadata",
+          "field": "metadata",
+          "pivot": false,
+          "width": 501,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 4,
+          "rowGroup": false,
+          "resizable": true,
+          "sortIndex": null,
+          "headerName": "Metadata",
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.step-resource-specs",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "resources",
+          "width": 259,
+          "hide": false,
+          "pinned": "left",
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "resourceType",
+          "width": 186,
+          "hide": false,
+          "pinned": null,
+          "sort": "desc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "quantity",
+          "width": 116,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "measurementUnit",
+          "width": 99,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "quantityUnit",
+          "width": 151,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "usageType",
+          "width": 142,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "assignmentType",
+          "width": 180,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "processingTime",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "quantityPerTime",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "modelInstances",
+          "width": 161,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "usageTypeDetails",
+          "width": 236,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "thresholdQuantity",
+          "width": 241,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.tags",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "ag-Grid-AutoColumn",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "name",
+          "width": 133,
+          "hide": false,
+          "pinned": null,
+          "sort": "asc",
+          "sortIndex": 0,
+          "aggFunc": null,
+          "rowGroup": true,
+          "rowGroupIndex": 0,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "tagType",
+          "width": 177,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "parentName",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "rank",
+          "width": 102,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "emoji",
+          "width": 106,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "color",
+          "width": 132,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.task-details",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "position",
+          "pivot": false,
+          "width": 122,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "name",
+          "pivot": false,
+          "width": 166,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "processingTime",
+          "pivot": false,
+          "width": 173,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "quantityPerTime",
+          "pivot": false,
+          "width": 181,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.totalStatus",
+          "pivot": false,
+          "width": 144,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "statistics.schedulingStatus",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "statistics.executionStatus",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingStart",
+          "pivot": false,
+          "width": 173,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingEnd",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingDuration",
+          "pivot": false,
+          "width": 194,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingLeadTime",
+          "pivot": false,
+          "width": 205,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingWaitingTime",
+          "pivot": false,
+          "width": 222,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionStart",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionEnd",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionDuration",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionLeadTime",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionWaitingTime",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": "asc",
+          "colId": "position",
+          "field": "position",
+          "pivot": false,
+          "width": 122,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "name",
+          "field": "name",
+          "pivot": false,
+          "width": 166,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "processingTime",
+          "field": "processingTime",
+          "pivot": false,
+          "width": 173,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "quantityPerTime",
+          "field": "quantityPerTime",
+          "pivot": false,
+          "width": 181,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 3,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.totalStatus",
+          "field": "statistics.totalStatus",
+          "pivot": false,
+          "width": 144,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 4,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "hide": true,
+          "sort": null,
+          "colId": "statistics.schedulingStatus",
+          "field": "statistics.schedulingStatus",
+          "pivot": false,
+          "width": 200,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 5,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "hide": true,
+          "sort": null,
+          "colId": "statistics.executionStatus",
+          "field": "statistics.executionStatus",
+          "pivot": false,
+          "width": 200,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 6,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.schedulingStart",
+          "field": "statistics.schedulingStart",
+          "pivot": false,
+          "width": 173,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 7,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.schedulingEnd",
+          "field": "statistics.schedulingEnd",
+          "pivot": false,
+          "width": 172,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 8,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.schedulingDuration",
+          "field": "statistics.schedulingDuration",
+          "pivot": false,
+          "width": 194,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 9,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.schedulingLeadTime",
+          "field": "statistics.schedulingLeadTime",
+          "pivot": false,
+          "width": 205,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 10,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.schedulingWaitingTime",
+          "field": "statistics.schedulingWaitingTime",
+          "pivot": false,
+          "width": 222,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 11,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.executionStart",
+          "field": "statistics.executionStart",
+          "pivot": false,
+          "width": 200,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 12,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.executionEnd",
+          "field": "statistics.executionEnd",
+          "pivot": false,
+          "width": 200,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 13,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.executionDuration",
+          "field": "statistics.executionDuration",
+          "pivot": false,
+          "width": 200,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 14,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.executionLeadTime",
+          "field": "statistics.executionLeadTime",
+          "pivot": false,
+          "width": 200,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 15,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "statistics.executionWaitingTime",
+          "field": "statistics.executionWaitingTime",
+          "pivot": false,
+          "width": 200,
+          "filter": true,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 16,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.tasks",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "ag-Grid-AutoColumn",
+          "pivot": false,
+          "width": 594,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "businessId",
+          "pivot": false,
+          "width": 177,
+          "pinned": "left",
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "wbs",
+          "pivot": false,
+          "width": 255,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "priority",
+          "pivot": false,
+          "width": 117,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "dateTimeFrom",
+          "pivot": false,
+          "width": 103,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "dateTimeTo",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.totalStatus",
+          "pivot": false,
+          "width": 144,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "statistics.schedulingStatus",
+          "pivot": false,
+          "width": 182,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": true,
+          "sort": null,
+          "colId": "statistics.executionStatus",
+          "pivot": false,
+          "width": 174,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingStart",
+          "pivot": false,
+          "width": 173,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingEnd",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingDuration",
+          "pivot": false,
+          "width": 194,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingLeadTime",
+          "pivot": false,
+          "width": 205,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.schedulingWaitingTime",
+          "pivot": false,
+          "width": 222,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionStart",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionEnd",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionDuration",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionLeadTime",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "statistics.executionWaitingTime",
+          "pivot": false,
+          "width": 200,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.task-resource-capacities",
+    "profile": "memom",
+    "value": {
+      "autosizeColumns": false,
+      "expandAllRows": false,
+      "filterModel": null,
+      "columnStates": [
+        {
+          "colId": "name",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "businessId",
+          "width": 200,
+          "hide": true,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "quantity",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "quantityUnit",
+          "width": 200,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "periodStart",
+          "width": 146,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "periodEnd",
+          "width": 160,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "entrySource",
+          "width": 158,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "entrySourcePayloadType",
+          "width": 99,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        },
+        {
+          "colId": "capacityGroup",
+          "width": 131,
+          "hide": false,
+          "pinned": null,
+          "sort": null,
+          "sortIndex": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "rowGroupIndex": null,
+          "pivot": false,
+          "pivotIndex": null,
+          "flex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.grid.profile.time-capacity-rules",
+    "profile": "memom",
+    "value": {
+      "columnStates": [
+        {
+          "flex": null,
+          "hide": false,
+          "sort": "asc",
+          "colId": "businessId",
+          "pivot": false,
+          "width": 190,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "name",
+          "pivot": false,
+          "width": 190,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "availability",
+          "pivot": false,
+          "width": 139,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "recurrence",
+          "pivot": false,
+          "width": 313,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "period.start",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "flex": null,
+          "hide": false,
+          "sort": null,
+          "colId": "period.end",
+          "pivot": false,
+          "width": 172,
+          "pinned": null,
+          "aggFunc": null,
+          "rowGroup": false,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ],
+      "expandAllRows": false,
+      "autosizeColumns": false,
+      "columnDefinitions": [
+        {
+          "sort": "asc",
+          "colId": "businessId",
+          "field": "businessId",
+          "pivot": false,
+          "width": 190,
+          "filter": false,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 0,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": 0,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "name",
+          "field": "name",
+          "pivot": false,
+          "width": 190,
+          "filter": false,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 1,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "availability",
+          "field": "availability",
+          "pivot": false,
+          "width": 139,
+          "filter": false,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 2,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "recurrence",
+          "field": "recurrence",
+          "pivot": false,
+          "width": 313,
+          "filter": false,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 3,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "period.start",
+          "field": "period.start",
+          "pivot": false,
+          "width": 172,
+          "filter": false,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 4,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        },
+        {
+          "sort": null,
+          "colId": "period.end",
+          "field": "period.end",
+          "pivot": false,
+          "width": 172,
+          "filter": false,
+          "pinned": null,
+          "aggFunc": null,
+          "colOrder": 5,
+          "editable": false,
+          "rowGroup": false,
+          "sortable": true,
+          "resizable": true,
+          "sortIndex": null,
+          "pivotIndex": null,
+          "rowGroupIndex": null
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.schedulingSettings",
+    "profile": "EarliestDate",
+    "value": {
+      "algorithmName": "earliest-date",
+      "resourceSorterName": "business-id-name",
+      "useGoodEnough": false,
+      "schedulingPositionSorterStepSettings": [
+        {
+          "$type": "task-start"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.schedulingSettings",
+    "profile": "ExactDate",
+    "value": {
+      "algorithmName": "exact-date",
+      "resourceSorterName": "business-id-name",
+      "useGoodEnough": false,
+      "schedulingPositionSorterStepSettings": [
+        {
+          "$type": "task-start"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.schedulingSettings",
+    "profile": "TaskPriority",
+    "value": {
+      "algorithmName": "priority",
+      "resourceSorterName": "business-id-name",
+      "useGoodEnough": false,
+      "schedulingPositionSorterStepSettings": [
+        {
+          "$type": "task-start"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.schedulingSettings",
+    "profile": "ResourcePriority",
+    "value": {
+      "algorithmName": "priority",
+      "resourceSorterName": "alternatives-priority",
+      "useGoodEnough": false,
+      "schedulingPositionSorterStepSettings": [
+        {
+          "$type": "task-start"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.schedulingSettings",
+    "profile": "Shop4Cf",
+    "value": {
+      "algorithmName": "earliest-date",
+      "resourceSorterName": "business-id-name",
+      "useGoodEnough": false,
+      "schedulingPositionSorterStepSettings": [
+        {
+          "$type": "task-delay"
+        },
+        {
+          "$type": "tag-kpi",
+          "tag": "WELD",
+          "ranges": [
+            0,
+            0.25,
+            0.5,
+            0.75,
+            1
+          ]
+        },
+        {
+          "$type": "tag-kpi",
+          "tag": "PAINT",
+          "ranges": [
+            0,
+            0.25,
+            0.5,
+            0.75,
+            1
+          ]
+        },
+        {
+          "$type": "tag-kpi",
+          "tag": "HEAVY",
+          "ranges": [
+            0,
+            0.25,
+            0.5,
+            0.75,
+            1
+          ]
+        },
+        {
+          "$type": "satisfaction"
+        },
+        {
+          "$type": "task-start"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.dispatchingSettings",
+    "profile": "Default",
+    "value": {
+      "resourceContextSorterStepStepSettings": [
+        {
+          "$type": "name"
+        },
+        {
+          "$type": "business-id"
+        },
+        {
+          "$type": "id"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.dispatchingSettings",
+    "profile": "Shop4Cf",
+    "value": {
+      "resourceContextSorterStepStepSettings": [
+        {
+          "$type": "tag-kpi",
+          "tag": "WELD",
+          "ranges": [
+            0,
+            0.25,
+            0.5,
+            0.75,
+            1
+          ]
+        },
+        {
+          "$type": "tag-kpi",
+          "tag": "PAINT",
+          "ranges": [
+            0,
+            0.25,
+            0.5,
+            0.75,
+            1
+          ]
+        },
+        {
+          "$type": "tag-kpi",
+          "tag": "HEAVY",
+          "ranges": [
+            0,
+            0.25,
+            0.5,
+            0.75,
+            1
+          ]
+        },
+        {
+          "$type": "satisfaction"
+        },
+        {
+          "$type": "name"
+        },
+        {
+          "$type": "business-id"
+        },
+        {
+          "$type": "id"
+        }
+      ]
+    }
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "planning.general.interruptTemplate",
+    "profile": "Default",
+    "value": "Interrupt"
+  },
+  {
+    "elementType": "globalSetting",
+    "action": "create",
+    "key": "app.client.modelInstances.tabs",
+    "profile": "Default",
+    "value": {
+      "equipments": [],
+      "materials": [],
+      "personnel": [],
+      "assets": [],
+      "locations": [],
+      "services": [],
+      "agreements": []
+    }
+  }
+]

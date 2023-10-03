@@ -1,0 +1,1569 @@
+[
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "resources.list.filters",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Resource filter",
+      "defaultContext": 300,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "model.schema.json",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.JsonSchemaSetting",
+      "removable": false,
+      "description": "JSON schema model value",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "security.auth.token.jira",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.JiraSettings",
+      "removable": false,
+      "description": "JIRA integration settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "planning.general.directiveresourcetype",
+    "values": {
+      "type": "CDEMS.Domain.Core.MasterData.Resources.ResourceType",
+      "removable": false,
+      "description": "Indicates which resource type is directive for planning",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.health.muscoskeletalmaxweightlimit",
+    "values": {
+      "type": "System.Decimal",
+      "removable": false,
+      "description": "Max weight of materials that a worker can carry",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.asset.defaultResourceCapacity",
+    "values": {
+      "type": "System.Decimal",
+      "removable": false,
+      "description": "Default initial resource capacity of created/imported asset",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.personnel.defaultResourceCapacity",
+    "values": {
+      "type": "System.Decimal",
+      "removable": false,
+      "description": "Default initial resource capacity of created/imported person",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.equipment.defaultResourceCapacity",
+    "values": {
+      "type": "System.Decimal",
+      "removable": false,
+      "description": "Default initial resource capacity of created/imported equipment",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.location.defaultResourceCapacity",
+    "values": {
+      "type": "System.Decimal",
+      "removable": false,
+      "description": "Default initial resource capacity of created/imported location",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.materials.attributesMeasurementsSchema",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Name of model instance schema, which is used to describe materials (measured values)",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.execution.performanceBasedRemainingTimeAfterPercentageOfCompletion",
+    "values": {
+      "type": "System.Decimal",
+      "removable": false,
+      "description": "Percentage of step completion after which remaining time is based on performance of already completed part of step. If negative the feature is turned off.",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.materials.attributesMatcherSchema",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Name of model instance schema, which is used to match material measured values to material",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.materials.scrapAttributesMeasurementsSchema",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Name of model instance schema, which is used to describe scrap materials (measured values)",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "factory.materials.scrapAttributesMatcherSchema",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Name of model instance schema, which is used to match scrap material measured values to scrap material",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        150,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.name",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Application name",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.tenant.type",
+    "values": {
+      "type": "CDEMS.Domain.Core.Tenants.TenantType",
+      "removable": false,
+      "description": "Tenant type",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.gantt.settings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.GanttSettings",
+      "removable": false,
+      "description": "Gantt settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.status.settings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.ApplicationStatusSettings",
+      "removable": false,
+      "description": "Application status settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.status.step",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.StepStatusSettings",
+      "removable": false,
+      "description": "Step status settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "alerting.email.template",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Alerting email template",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "report.ordersGroupedByCustomersReport",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.ReportSetting",
+      "removable": false,
+      "description": "Customer orders",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "report.OeeReport",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.ReportSetting",
+      "removable": false,
+      "description": "OEE",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "report.OleReport",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.ReportSetting",
+      "removable": false,
+      "description": "OLE",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "report.WorkSatisfactionReport",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.ReportSetting",
+      "removable": false,
+      "description": "Work Satisfaction",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "alerting.rule",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.AlertSetting",
+      "removable": true,
+      "description": "Alert setting",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "planning.general.finiteresourcetypes",
+    "values": {
+      "type": "CDEMS.Domain.Core.MasterData.Resources.ResourceType[]",
+      "removable": true,
+      "description": "Resource types that will be considered as finite capacity during scheduling",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.terminal.settings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.DeviceSettings",
+      "removable": true,
+      "description": "Device settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.client.settings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.ClientSettings",
+      "removable": true,
+      "description": "Client settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.terminal.settings.showVirtualScrap",
+    "values": {
+      "type": "System.Boolean",
+      "removable": false,
+      "description": "Should terminal allow reporting scrap when material index is not yet created",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "shop4cf.fiware.removeAlertAfterConsumed",
+    "values": {
+      "type": "System.Boolean",
+      "removable": true,
+      "description": "Should alert be removed from fiware after it's consumed",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "model.schema.json.featuresDefinition",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.PredefinedSchemaSetting",
+      "removable": false,
+      "description": "Grouping of features definitions",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "model.schema.json.requirementsDefinition",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.PredefinedSchemaSetting",
+      "removable": false,
+      "description": "Grouping of requirements definitions",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "model.schema.json.documentDefinition",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.PredefinedSchemaSetting",
+      "removable": false,
+      "description": "Document/Attachment definition",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "model.schema.json.productOverview.attachmentDefinition",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.PredefinedSchemaSetting",
+      "removable": false,
+      "description": "Product Overview - Attachment definition",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.customerLogo",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Customer logo",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.dashboard.settings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.DashboardSettings",
+      "removable": false,
+      "description": "Dashboard settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.menu",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.AppMenuSettings",
+      "removable": true,
+      "description": "Application menu configuration",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.client.i18n.labels.public",
+    "values": {
+      "type": "System.Collections.Generic.Dictionary`2[System.String,System.Object]",
+      "removable": false,
+      "description": "Language labels for non authorized part of client application",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.client.i18n.labels",
+    "values": {
+      "type": "System.Collections.Generic.Dictionary`2[System.String,System.Object]",
+      "removable": false,
+      "description": "Language labels for client application",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.terminal.i18n.labels.public",
+    "values": {
+      "type": "System.Collections.Generic.Dictionary`2[System.String,System.Object]",
+      "removable": false,
+      "description": "Language labels for non authorized part of terminal application",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.terminal.i18n.labels",
+    "values": {
+      "type": "System.Collections.Generic.Dictionary`2[System.String,System.Object]",
+      "removable": false,
+      "description": "Language labels for terminal application",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.planning.reworkresourcemapping",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.PlanningReworkMappingSettings",
+      "removable": true,
+      "description": "Planning - Rework Mapping Settings",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "scheduling.general.defaultSettingName",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Default scheduling setting name",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "scheduling.general.defaultDragAndDropSettingName",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Default scheduling setting name used during drag&drop",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "scheduling.general.settingNames",
+    "values": {
+      "type": "System.String[]",
+      "removable": false,
+      "description": "Scheduling setting names used for choosing scheduling options",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.data.attachmentContentStorage",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.AttachmentContentStorage",
+      "removable": false,
+      "description": "Credentials and type of storage for attachment content/files",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.terminal.workSatisfaction.ratingTagsGroup",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Work satisfaction rating tags group (parent tag)",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.agreements.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - agreements",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.agreements",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - agreements",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.assets.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - assets",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.assets",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - assets",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.contacts.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - contacts",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.contacts",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - contacts",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.costCatalogue.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - cost catalogue",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.costCatalogue",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - cost catalogue",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.equipment.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - equipment",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.equipment",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - equipment",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.locations.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - locations",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.locations",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - locations",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.materials.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - materials",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.materials",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - materials",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.order-lines.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - order-lines",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.order-lines",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - order-lines",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.orders.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - orders",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.orders",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - orders",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.organizations.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - organizations",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.organizations",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - organizations",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.personnel.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - personnel",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.personnel",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - personnel",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.product-templates.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - product-templates",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.product-templates",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - product-templates",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.scenarios.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - scenarios",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.scenarios",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - scenarios",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.schema-instances.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - schema-instances",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.schema-instances",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - schema-instances",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.schemas.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - schemas",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.schemas",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - schemas",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.services.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - services",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.services",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - services",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.settings.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - settings",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.settings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - settings",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.step-resource-specs.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - step-resource-specs",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.step-resource-specs",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - step-resource-specs",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.tags.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - tags",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.tags",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - tags",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.task-details.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - task-details",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.task-details",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - task-details",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.tasks.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - tasks",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.tasks",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - tasks",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.task-resource-capacities.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - task resource capacities",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.task-resource-capacities",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - task resource capacities",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.time-capacity-rules.default",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Default list profile - scetime-capacity-rulesnarios",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.grid.profile.time-capacity-rules",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.UserInterfaceProfile",
+      "removable": true,
+      "description": "List profile - time-capacity-rules",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.help.baseUrl",
+    "values": {
+      "type": "System.String",
+      "removable": false,
+      "description": "Help base URL",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.help.contentMap",
+    "values": {
+      "type": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
+      "removable": false,
+      "description": "Mapping app screen path to help page",
+      "defaultContext": 100,
+      "allowedInContexts": [
+        100
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "planning.general.schedulingSettings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.SchedulingSettings",
+      "removable": true,
+      "description": "Scheduling settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "planning.general.dispatchingSettings",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.DispatchingSettings",
+      "removable": true,
+      "description": "Scheduling settings",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "planning.general.interruptTemplate",
+    "values": {
+      "type": "System.String",
+      "removable": true,
+      "description": "Business ID of product template which is used to create Interrupt Tasks",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "execution.printableLabel",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.PrintableLabelSettings",
+      "removable": true,
+      "description": "Printable label settings - name of label, free text printed on it, company logo url",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200
+      ]
+    }
+  },
+  {
+    "elementType": "settingMetadata",
+    "action": "create",
+    "key": "app.client.modelInstances.tabs",
+    "values": {
+      "type": "CDEMS.Domain.Core.Settings.Models.ModelInstanceTabsSetting",
+      "removable": true,
+      "description": "",
+      "defaultContext": 200,
+      "allowedInContexts": [
+        100,
+        200,
+        300
+      ]
+    }
+  }
+]

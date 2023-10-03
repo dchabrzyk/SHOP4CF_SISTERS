@@ -1,0 +1,32 @@
+﻿image:
+  repository: docker.ramp.eu/masta-pvt/sisters-mctids
+  tag: latest
+  pullPolicy: Always
+imagePullSecrets:
+  - name: ramp
+
+service:
+  type: NodePort
+  nodePort: 31779
+
+ingress:
+  enabled: false
+#  annotations:
+#    nginx.ingress.kubernetes.io/proxy-body-size: 64m
+#  hosts:
+#    - host: terminal.$(base_domain)
+#      paths:
+#        - path: /
+#          pathType: Prefix
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+
+environmentVariables:
+  - name: API_BASE_URL
+    value: http://localhost:31777
+  - name: APP_AUTH_DOMAIN
+    value: http://localhost:31062

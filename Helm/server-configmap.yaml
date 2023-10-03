@@ -1,0 +1,101 @@
+﻿apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: server-configmap
+data:
+  appsettings.json: |-
+    {
+      "ConnectionStrings": {
+        "DefaultConnection": "Host=postgresql.sisters.svc.cluster.local;Port=5432;Database=sisters;User ID=app_user;Password=app_pass",
+        "AdminConnection": "Host=postgresql.sisters.svc.cluster.local;Port=5432;Database=sisters;User ID=postgres;Password=postgres"
+      },
+      "Auth": {
+        "Domain": "http://keycloak:8080",
+        "Server": {
+          "MasterRealm": "master",
+          "AdminUsername": "admin",
+          "AdminSecret": "admin",
+          "ClientId": "server",
+          "ClientSecret": ""
+        },
+        "Client": {
+          "RedirectUris": [
+            "http://localhost:31778/*"
+          ],
+          "BaseUrl": "http://localhost:31778",
+          "ClientId": "client"
+        },
+        "Device": {
+          "RedirectUris": [
+            "http://localhost:31779/*"
+          ],
+          "BaseUrl": "http://localhost:31779"
+        },
+        "KibanaWebhook": {
+          "ClientId": "kibana-webhook"
+        },
+        "Smtp": {
+          "StartTls": true,
+          "Auth": false,
+          "Ssl": false,
+          "Port": 587,
+          "Host": "",
+          "From": "",
+          "FromDisplayName": "[SISTERS]"
+        }
+      },
+      "Logging": {
+        "LogLevel": {
+          "Default": "Information",
+          "Microsoft": "Warning",
+          "Microsoft.Hosting.Lifetime": "Information",
+          "Elastic.Apm": "Information"
+        }
+      },
+      "Serilog": {
+        "MinimumLevel": {
+          "Default": "Debug",
+          "Override": {
+            "Microsoft": "Warning",
+            "System": "Warning",
+            "Elastic.Apm": "Information"
+          }
+        },
+        "Enrich": [
+          "FromLogContext",
+          "WithMachineName",
+          "WithProcessId",
+          "WithThreadId"
+        ],
+        "WriteTo": [
+          {
+            "Name": "Console"
+          },
+          {
+            "Name": "Debug",
+            "Args": {
+              "restrictedToMinimumLevel": "Verbose"
+            }
+          }
+        ],
+        "AllowedHosts": "*"
+      },
+      "MassTransit": {
+        "RabbitMQ": {
+          "Host": "rabbitmq",
+          "Port": 5672,
+          "Username": "masta",
+          "Password": "blasta"
+        },
+        "Kafka": {
+          "Host": "kafka-service:9092",
+          "ConsumerGroup": "consumer-group"
+        }
+      },
+      "FiwareUrl": "http://fiware:8100",
+      "camundaRestApiUri": "http://camunda:8200/engine-rest",
+      "Hangfire": {
+        "Login": "admin",
+        "Password": "admin"
+      }
+    }

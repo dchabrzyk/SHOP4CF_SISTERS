@@ -1,0 +1,141 @@
+# Generated in CI pipeline
+image:
+  repository: docker.ramp.eu/masta-pvt/tupiid
+  tag: latest
+  pullPolicy: IfNotPresent
+imagePullSecrets:
+  - name: server-acr-token
+ingress:
+  enabled: true
+  className: Public
+  annotations:
+    {}
+  path: /
+  pathType: ImplementationSpecific
+  hosts:
+    - <explore_frontend_url>
+
+postgresql:
+  enabled: false
+
+supersetNode:
+  replicaCount: 1
+
+supersetCeleryBeat:
+  enabled: true
+
+configOverrides:
+
+  secret: |
+    SECRET_KEY = '10x199ad_86x1_4239_ba45_c12277fff1de'
+
+  enable_i18n: |
+    LANGUAGES = {
+        'en': {'flag': 'us', 'name': 'English'},
+    }
+
+  rebranding: |
+    APP_NAME = "TUPIID"
+
+  feature_flags: |
+    import ast
+    
+    ENABLE_PROXY_FIX = True
+    ALERT_REPORTS_NOTIFICATION_DRY_RUN = False
+    WTF_CSRF_ENABLED = False
+    FEATURE_FLAGS = {
+        'ALERT_REPORTS': True,
+        'DRILL_TO_DETAIL': True,
+        'DASHBOARD_RBAC': True,
+        'EMBEDDABLE_CHARTS': True,
+        'EMBEDDED_SUPERSET': True,
+        'VERSIONED_EXPORT': True,
+    }
+
+  smtp: |
+    SMTP_HOST = "smtp-relay.gmail.com"
+    SMTP_PORT = 587
+    SMTP_STARTTLS = True
+    SMTP_SSL_SERVER_AUTH = False
+    SMTP_SSL = False
+    SMTP_USER = ""
+    SMTP_PASSWORD = ""
+    SMTP_MAIL_FROM = ""
+    EMAIL_REPORTS_SUBJECT_PREFIX = "[TUPIID]"
+
+  celery_conf: |
+    from celery.schedules import crontab
+    
+    class CeleryConfig(object):
+      broker_url = f"redis://{env('REDIS_HOST')}:{env('REDIS_PORT')}/0"
+      imports = ('superset.sql_lab', "superset.tasks", "superset.tasks.thumbnails", )
+      result_backend = f"redis://{env('REDIS_HOST')}:{env('REDIS_PORT')}/0"
+      task_annotations = {
+          'sql_lab.get_sql_results': {
+              'rate_limit': '100/s',
+          },
+          'email_reports.send': {
+              'rate_limit': '1/s',
+              'time_limit': 600,
+              'soft_time_limit': 600,
+              'ignore_result': True,
+          },
+      }
+      beat_schedule = {
+          'reports.scheduler': {
+              'task': 'reports.scheduler',
+              'schedule': crontab(minute='*', hour='*'),
+          },
+          'reports.prune_log': {
+              'task': 'reports.prune_log',
+              'schedule': crontab(minute=0, hour=0),
+          },
+          'cache-warmup-hourly': {
+              'task': 'cache-warmup',
+              'schedule': crontab(minute='*/30', hour='*'),
+              'kwargs': {
+                  'strategy_name': 'top_n_dashboards',
+                  'top_n': 10,
+                  'since': '7 days ago',
+              },
+          }
+      }
+    
+    CELERY_CONFIG = CeleryConfig
+
+  webhook: |
+    # default name of webhook client (Keycloak)
+    WEBHOOK_USERNAME = 'cdems-superset-webhook'
+    # default secret of webhook client (Keycloak)
+    WEBHOOK_SECRET = 'superset-webhook-secret'
+    # tenant ID query param name
+    WEBHOOK_TENANT_QUERY_PARAM = 'tenantId'
+    
+    # deduce Tenant ID basing on endpoint address
+    def resolve_webhook_tenant_id(endpoint: str):
+        from urllib.parse import urlparse, parse_qs
+        from typing import AnyStr
+    
+        query_params: dict[AnyStr, list[AnyStr]] = parse_qs(urlparse(endpoint).query)
+        if WEBHOOK_TENANT_QUERY_PARAM in query_params:
+            return query_params[WEBHOOK_TENANT_QUERY_PARAM][0]
+    
+        return endpoint.split('?')[0].split('/')[-1]
+    
+    # prepare basic base64 encoded credentials
+    def webhook_authorization_header(username = WEBHOOK_USERNAME, secret = WEBHOOK_SECRET):
+      import base64
+      credentials = f"{username}:{secret}"
+      encoded_credentials = base64.b64encode(credentials.encode("utf-8"))
+      token = encoded_credentials.decode("utf-8")
+      return f"Basic {token}"
+    
+    # attach authorization headers to webhook request
+    def provide_webhook_custom_headers(endpoint = ''):
+      return {
+        'Authorization': webhook_authorization_header(WEBHOOK_USERNAME, WEBHOOK_SECRET),
+        'X-Tenant': resolve_webhook_tenant_id(endpoint)
+      }
+    
+    # set authorization headers provider
+    WEBHOOK_CUSTOM_HEADERS = provide_webhook_custom_headers

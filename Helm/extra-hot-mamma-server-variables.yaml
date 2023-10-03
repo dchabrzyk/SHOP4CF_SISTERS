@@ -1,0 +1,34 @@
+﻿image:
+  repository: docker.ramp.eu/masta-pvt/sisters-extra-hot-mamma-server
+  tag: latest
+  pullPolicy: Always
+imagePullSecrets:
+  - name: ramp
+
+service:
+  type: NodePort
+  nodePort: 31777
+
+ingress:
+  enabled: false
+#  annotations:
+#    nginx.ingress.kubernetes.io/proxy-body-size: 64m
+#  hosts:
+#    - host: api.$(base_domain)
+#      paths:
+#        - path: /
+#          pathType: Prefix
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+
+environmentVariables:
+  - name: FIWARE_WEBHOOK_CALLBACK_URL
+    secret:
+      key: FIWARE_WEBHOOK_CALLBACK_URL
+      value: http://fiware:8100
+  - name: ASPNETCORE_URLS
+    value: http://+

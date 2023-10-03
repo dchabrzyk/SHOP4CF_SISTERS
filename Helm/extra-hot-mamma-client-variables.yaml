@@ -1,0 +1,36 @@
+﻿image:
+  repository: docker.ramp.eu/masta-pvt/sisters-extra-hot-mamma-client
+  tag: latest
+  pullPolicy: Always
+imagePullSecrets:
+  - name: ramp
+
+service:
+  type: NodePort
+  nodePort: 31778
+
+ingress:
+  enabled: false
+#  annotations:
+#    nginx.ingress.kubernetes.io/proxy-body-size: 64m
+#  hosts:
+#    - host: $(base_domain)
+#      paths:
+#        - path: /
+#          pathType: Prefix
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+
+environmentVariables:
+  - name: API_BASE_URL
+    value: http://localhost:31777
+  - name: URL_BASE
+    value: localhost:31778
+  - name: AUTH_URL
+    value: http://localhost:31062/
+  - name: AUTH_CLIENT_ID
+    value: client

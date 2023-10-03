@@ -1,0 +1,30 @@
+﻿service:
+  nodePort: 31062
+args:
+  - start
+  - --hostname-strict
+  - false
+  - --hostname-strict-https
+  - false
+  - --spi-connections-jpa-default-migration-strategy
+  - update
+secrets:
+  - name: KEYCLOAK_ADMIN
+    value: admin
+  - name: KEYCLOAK_ADMIN_PASSWORD
+    value: admin
+  - name: KC_DB_USERNAME
+    value: keycloak_user
+  - name: KC_DB_PASSWORD
+    value: keycloak_pass
+environmentVariables:
+  - name: KC_HEALTH_ENABLED
+    value: true
+  - name: KC_DB
+    value: postgres
+  - name: KC_DB_URL
+    value: jdbc:postgresql://postgresql.hopeforeman.svc.cluster.local:5432/hopeforeman?currentSchema=keycloak
+  - name: KC_PROXY
+    value: edge
+  - name: KC_HOSTNAME_URL
+    value: http://localhost:31062

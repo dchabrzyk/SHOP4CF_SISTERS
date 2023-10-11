@@ -43,3 +43,6 @@ Helm charts are available from docker.ramp.eu/masta-pvt repository or in ``Helm`
 
 Please note the correct order of launch (check ``initialize.sh`` script for details).
   
+## TUPIID Product passport
+Once the TUPIID administration console is available go to Dashboards -> Import Dashboard and import file dashboard_export_20231010T121422.zip from SHOP4CF_SISTERS
+/Resources/.
